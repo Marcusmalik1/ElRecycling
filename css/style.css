@@ -1,0 +1,849 @@
+/* Basic reset start */
+
+:after:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #F5FEF4;
+    
+}
+
+.html,
+body {
+    margin: 0;
+}
+
+.page_body {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+p {
+    font-family:'Oswald', sans-serif;    
+}
+
+h1 {
+  font-family:'Oswald', sans-serif;    
+}
+
+h2 {
+    font-family:'Oswald', sans-serif;    
+}
+
+h3 {
+    font-family:'Oswald', sans-serif;    
+    padding: 0;
+    margin: 1%;
+}
+
+
+/*---Basic reset slut ---*/
+
+
+/*---Navigationsbar start ---*/
+
+header {
+    background: var(--background);
+    width: 100%;
+    border-bottom: 1px solid #23993D;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F5FEF4;
+    display: flex;
+    justify-content: center;
+  }
+  
+/*--- Menu punkter ---*/
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  li {
+    border-right: 1px solid #23993D;
+
+  }
+
+  li a:hover:not(.active) {
+    background-color: #71e280;
+  }
+  
+  .active {
+    background-color: #71e280;
+  }
+
+/*--- Menu punkter slut ---*/
+
+
+/*--- Logo, søgefelt og icons start ---*/
+
+.logo {
+    width: 35%;
+    height: 35%;
+    
+  }
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5%;
+    border: 3px solid #A6E388;
+    border-radius: 15px 0 0 15px;
+    font-size: 17px;
+    width: 450px;
+    height: 1px;
+}
+
+.search-bar button[type="submit"] {
+    padding: 2% 5%;
+    background-color: #A6E388;
+    border: none;
+    color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+
+}
+
+.logosearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15%;
+}
+
+.kurv {
+    width: 40px;
+    height: 40px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 13%;
+}
+
+.search-icon {
+    font-size: 20px;
+}
+/*--- Logo, søgefelt og icons slut ---*/
+/*--- Navigationsbar slut---*/
+
+
+/*--- Forside start ---*/
+.hero-image {
+    position: relative;
+    text-align: center;
+    background-image: url('../img/hero_billede.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /* Billedet fylder hele skærmen */
+  }
+  
+  .trustpilot {
+    display: flex;
+    padding: 40px;
+    height: 50px;
+  }
+
+  .hero-text {
+    position: absolute;
+    font-size: 160%;
+    color: #162441;
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text h1{
+        font-size: 140%;
+  }
+
+  .læs-mere-knap {
+    position: absolute;
+    top: 52%;
+    width: 96%;
+    text-align: center;
+  }
+  
+  
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top: 74%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #6cc73e;
+    font-family:'Oswald', sans-serif;    
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 17px 70px;
+    margin: 0 30px;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #bedb86;
+  }
+
+
+  /*--- Arrow ned ---*/
+
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 49%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .scroll-down-arrow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 13px 13px 0;
+    transform: rotate(90deg);
+    cursor: pointer;
+    animation: scrollAnimation 1s infinite alternate;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+  
+  .scroll-down-arrow:hover {
+    animation: scrollAnimation 1s infinite alternate;
+  }
+  
+  #content {
+    height: 1200px;
+  }
+/* --------------------------------- forside article --------------------------- */
+
+.forside-overskrift {
+  position: absolute;
+  font-size: 60px;
+  color: #162441;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.forside-overskrift {
+  position: absolute;
+  font-size: 60px;
+  color: #162441;
+  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.streg-container {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 10px);
+  display: flex;
+  justify-content: center;
+}
+
+.tynd-streg {
+  width: 50%;
+  border-top: 1px solid black;
+  margin-top: 150px;
+}
+
+/*--- Studierabat icon og tekst ---*/
+
+
+.fa-solid {
+  font-size: 250%;
+  color: #dad15f;
+}
+
+.discount {
+font-family:'Oswald', sans-serif;   
+font-size: 85%;
+text-align: center;
+}
+
+span.discountto {
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+  padding-left: 10%;
+}
+
+
+
+/*--------- Produktbilleder ---------*/
+
+.kolonne-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kolonne {
+  width: 15%;
+  text-align: center;
+  margin-top: 210px;
+
+}
+
+.kolonne img {
+  width: 100%;
+}
+
+.kolonne h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.kolonne p {
+  margin-top: 5px;
+}
+
+.laes-mere {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #6cc73e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.billedeprodukt {
+  width: 50%;
+  height: 30%;
+}
+
+/*---------- bunden af forsiden ----------*/
+
+.kolonne2-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 202%;
+}
+
+.kolonne2 {
+  width: 15%;
+  padding: 35px;
+  text-align: center;
+}
+
+
+.kolonne2 h2 {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.kolonne2 p {
+  font-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.baggrund-container {
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+}
+
+.baggrund1 {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  width: 19%;
+  text-decoration: none;
+  margin: 0 0px;
+}
+
+
+
+.laes-mere2 {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #6cc73e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.forside-overskrift2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: #162441;
+
+}
+
+
+.tynd-streg2 {
+  width: 50%;
+  border-top: 1px solid black;
+  margin-top: 715px;
+}
+
+/*---------------------------- Forside slut --------------------------*/
+
+/*---------------------------- Produktside start ---------------------*/
+
+  /*--- Herobillede plus tekst ---*/
+
+.minihero {
+    width: 100%;
+    height: 100%;
+}
+
+.computerheadline {
+    font-family:'Oswald', sans-serif;    
+    color: white;
+    font-size: 350%;
+    z-index: 99;
+    position: absolute;
+    top: 38%;
+    left: 19%;
+    transform: translate(-50%,-10%);
+}
+
+/*--- Overskrift, brødtekst og linje---*/
+
+.headlinetwo {
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tekstcomputer {
+    font-size: 140%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 96%;
+}
+
+/*--- Filtrering ---*/
+
+.eleven {
+    font-size: 140%;
+}
+
+#buttons {
+    display: flex;
+    text-align: center;
+    justify-content: end;
+
+
+}
+
+.btn {
+    width: 130px;
+    height: 45px;
+    font-size: 100%;
+    padding: 1%;
+    color: white;
+    background-color:#23993D;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.filtrering {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+/*--- Produktbilleder ---*/
+
+.produktbillede {
+    width: 280px;
+    height: 180px;
+}
+
+.products {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.produktbeskrivelse{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4%;
+    border: 1px solid rgb(222, 224, 220);
+    padding: 1%;
+}
+
+
+.productbtn {
+    width: 60%;
+    padding: 5%;
+    color: white;
+    font-size: 100%;
+    background-color:#71e280;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+
+}
+
+/*--- Modal ---*/
+
+.popUp {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .popUp-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 1000px;
+    background-color: #162441;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .close {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+.garanti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.modalhead {
+    color: white;
+    margin: 0 5%;
+}
+
+
+.modalpic {
+    width: 55%;
+}
+
+.modalcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.price {
+    color: white;
+    font-size: 130%;
+}
+
+.modalknap {
+    width: 190px;
+    height: 40px;
+    color: white;
+    font-size: 120%;
+    background-color:#6CC73E;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.linemodal {
+    width: 45%;
+    margin: 0 5%;
+}
+
+
+.modaltekst {
+    color: white;
+    font-size: 95%;
+    
+}
+
+.modalpicto {
+    width: 15%;
+    height: 30%;
+    border: 1px solid rgb(222, 224, 220);
+    margin: 3% 9%;
+    padding: 0;
+}
+
+
+.modalcontentto {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.modaltekstto {
+    color: white;
+    font-size: 90%;
+    padding-right: 12%;
+}
+
+
+.lignendeprodukt {
+    display: flex;
+    flex-direction: column;
+}
+
+.lignendetekst {
+    color: white;
+    padding-left: 9%;
+}
+
+.lignendepic1 {
+    width: 15%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2%;
+    margin: 1%;
+}
+
+.lignendepictures {
+    display: flex;
+    flex-direction: row;
+    margin: 0 8%;
+    
+}
+
+
+
+/*------ Informationsside -----*/
+
+.informationheadline {
+  font-family:'Oswald', sans-serif;    
+    color: white;
+    font-size: 350%;
+    z-index: 99;
+    position: absolute;
+    top: 54%;
+    left: 19%;
+    transform: translate(-50%,-10%);
+}
+
+/*--- Content 1 iværksætter ---*/
+
+.ivorksaetter {
+  width: 45%;
+  height: 45%;
+  padding: 3%;
+}
+
+.informationstekst {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5%;
+}
+
+.tekstinformation {
+  font-size: 130%;
+  padding-right: 20%;
+}
+
+.titelinformation {
+  padding-top: 1%;
+}
+
+
+
+
+
+/*--- Content 2 samarbejde ---*/
+
+
+
+.informationstekstto {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5%;
+}
+
+.ivorksaetterto {
+  width: 30%;
+  height: 40%;
+  padding: 3%;
+  padding-right: 10%;
+}
+
+.titelinformationto {
+  padding-top: 1%;
+  margin: 0 3%;
+}
+
+.tekstinformationto {
+  font-size: 130%;
+  padding-right: 11%;
+}
+
+
+
+/*------------------404 side-------------*/
+
+.fejltekst {
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+}
+
+.fejlsideimg {
+  width: 30%;
+  height: 30%;
+  margin: 0 35%;
+}
+
+.fejltekstp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 130%;
+  margin: 0;
+}
+
+
+
+
+/* ------------------------------------- Footer -------------------------------- */
+
+
+
+    /* CSS-styling for footer */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #162441;
+        padding: 20px;
+        font-size: 22px;
+      }
+  
+      .column {
+        flex-basis: 30%;
+      }
+      .column h3 {
+        color: #fdfdfb;
+        padding-bottom: 20px;
+        font-size: larger;
+      }
+      .column h4 {
+        color: #fdfdfb;
+        padding-bottom: 10px;
+      }
+  
+      .column p {
+        color: #fdfdfb;
+        padding-bottom: 20px;
+        font-size: smaller;
+      }
+
+      .some{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .some{
+        display: flex;
+        gap: 15px;
+        height: 60px;
+    }
+
+    .betaling {
+      height: 60px;
+      width: 60px;
+    }
+    .some_img{
+        height: 70px;
+        width: 70px;
+    }
+
+      .column:last-child img {
+        position: relative;
+        bottom: 10px;
+        padding-top: 20px;
+        width: 70%;
+        max-width: 200px;
+      }
+
+

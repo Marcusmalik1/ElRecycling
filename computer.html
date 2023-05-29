@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/899c396768.js" crossorigin="anonymous"></script>
+    <title>El Recycling</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+<header>
+    <div class="logosearch">
+        <a href="index.html">
+            <img class="logo" src="img/LogoER.png" alt="logo">
+          </a>
+                    
+            <div class="search-bar">
+                <form>
+                  <input type="text" placeholder="Søg på produkter, varetype, varenummer.">
+                  <button type="submit" aria-label="Søg på varer"><i class="fas fa-search search-icon"></i></button>
+                </form>
+            </div>
+    
+        <div class="icons">
+          <a href="#">
+            <img class="kurv" src="img/kurv.png" alt="logo">
+        </a>
+            <img class="profile" src="img/profileicon.png" alt="logo">
+        </div>
+    </div>
+    
+    <ul>
+      <li><a href="index.html">Forside</a></li>
+      <li><a class="active" href="computer.html">Shop</a></li>
+      <li><a href="information.html">Informationer</a></li>
+      <li><a href="fejlside.html">Erhverv</a></li>
+    </ul>
+
+</header>
+        
+<article>
+
+<img class="minihero" src="img/herocomputer.jpg" alt="computer">
+<h1 class="computerheadline">Bærebare<br>Computere</h1>
+
+<h2 class="headlinetwo">Bærebare computere</h2>
+
+<p class="tekstcomputer">Vælg din næste bærebare computer til en billig pris og samtidig som en bæredygtig løsning.<br> Med 2 års garanti samt 30 dages returret er du sikret dit køb af vores refurbished computere.<br>Vi har et bredt udvalg af produkter med mærker som Dell, HP, ACER og mange flere!</p>
+<br>
+<br>
+<hr class="line">
+
+<div class="filtrering">
+<p class="eleven">11 produkter i alt</p>
+<h3>Her har du muligheden for at filtrere efter dine behov!</p>
+<div id="buttons">
+    <button class="btn" onclick="filterProducts('Alle')">Alle</button>
+    <button class="btn" onclick="filterProducts('Populære')">Populære</button>
+    <button class="btn" onclick="filterProducts('Til studie')">Til studie</button>
+    <button class="btn" onclick="filterProducts('Til arbejde')">Til arbejde</button>
+    
+</div>
+</div>
+
+<hr class="line">
+<br>
+<div class="products">
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede5.png" alt="computer" data-filter="Til studie">
+        <h3>Dell Windows</h3>
+        <p>Pris 995,00 DKK<br>Batteri-kapacitet: 87%<br>Operating System Windows<br> 10 Pro 64-bit</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede2.png" alt="computer" data-filter="Populære">
+        <h3>Dell Windows</h3>
+        <p>Pris 1.495,00 DKK<br> Batteri-kapacitet: 88% <br>Operating System Windows<br>10 Pro 64-bit</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede3.png" alt="computer" data-filter="Til studie">
+        <h3>Dell Windows</h3>
+        <p>Pris 1.195,00 DKK<br> Batteri-kapacitet: 90%<br>Operating System Windows<br>10 Pro 64-bit</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>
+    
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede1.png" alt="computer" data-filter="Populære">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede3.png" alt="computer" data-filter="Til studie">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+    
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede4.png" alt="computer" data-filter="Til studie">
+        <h3>ACER</h3>
+        <p>Pris 795,00 DKK<br> Batteri-kapacitet: 78%<br>Operating System Windows<br>9 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede5.png" alt="computer" data-filter="Populære">
+        <h3>HP Windows</h3>
+        <p>Pris 895,00 DKK<br> Batteri-kapacitet: 80%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede1.png" alt="computer"data-filter="Til arbejde">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button id="modalBtn" class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede2.png" alt="computer" data-filter="Populære">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede2.png" alt="computer" data-filter="Til arbejde">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button class="productbtn">Læs mere</button>
+    </div>    
+
+    <div class="produktbeskrivelse">
+        <img class="produktbillede" src="img/produktbillede3.png" alt="computer" data-filter="Til arbejde">
+        <h3>HP Windows</h3>
+        <p>Pris 995,00 DKK<br> Batteri-kapacitet: 84%<br>Operating System Windows<br>10 Pro 64-bitp</p>  
+        <button id="productButton" class="productbtn">Læs mere</button>
+    </div>    
+    
+</div>
+
+
+
+
+<div id="popUp" class="popUp">
+    <div class="popUp-content">
+      <span class="close">&times;</span>
+      <section class="garanti">
+        <p>2 års garanti</p> 
+        <p>Levering 1-3 hverdage</p>
+        <p>Fri fragt</p>
+      </section>
+      <br>
+      <h2 class="modalhead">Dell Latitude E5550</h2>
+
+    <section class="modalcontent">
+        <img class="modalpic" src="img/produktbillede5.png" alt="computer">
+                <section>
+                <p class="price">Pris: 1995,00 DKK</p>
+                <button class="modalknap">Læg i kurv</button>
+                <p class="modaltekst">Dell Latitude E555o er en alsidig bærebar computer, som både kan bruges til det daglige brug om det er studie, arbejde eller bare til hjemmebrug, så kan denne computer klare dine behov. </p>
+            </section>    
+    </section>
+
+    <hr class="linemodal">
+    
+
+    <section class="modalcontentto">
+    <section class="lignendeprodukt">
+        <img class="modalpicto" src="img/dellreverse.png" alt="computer">
+        <p class="lignendetekst">Lignende produkter</p>
+        <section class="lignendepictures">
+        <img class="lignendepic1" src="img/produktbillede1.png" alt="computer">
+        <img class="lignendepic1" src="img/produktbillede3.png" alt="computer">
+        </section>
+    </section>
+        <p class="modaltekstto">Dell Latitude E5550 i5 5th Gen<br>Batterikapacitet: 73%<br>Operating System - Windows 10 Pro 64-bitCPU  Intel Core i5 5300U @ 2.30GHz Broadwell-U 14nm Technology<br>RAM - 8,00GB Dual-Channel DDR3 @ 798MHz<br>Motherboard - Dell Inc. 06DJY6 (SOCKET 0)<br>Graphics - Generic PnP Monitor (1920x1080@60Hz) Intel HD Graphics 5500 (Dell)<br>Storage - 119GB SAMSUNG MZ7LN128HCHP-000L1 (SATA (SSD)) Optical Drives<br> 
+    </section>
+
+    
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+<footer class="footer">
+        <div class="column">
+        <h3>Kontakt</h3>
+          <h4>Adresse</h4>
+            <p> Hvedevej 28,<br>
+                8920 Randers <br>
+                Danmark
+            </p>
+          <h4>Telefonnr</h4>
+            <p>88710642 <br>
+                Vi kan kontaktes alle <br>
+                hverdage fra 9-16
+            </p>
+          <h4>E-mail</h4>
+            <p>Kontakt@elrecycling.dk
+            </p>
+        </div>
+        <div class="column">
+        <h3>VI HAR EN BUTIK</h3>
+            <p>Hos El Recycling har vi et stor udvalg på webshoppen,<br>
+                men kom også forbi vores store butik.
+            </p>
+          <h4>Åbningstider:</h4>
+            <p>Mandag - Fredag: 9:00 - 16:00<br>
+                Lørdag: Lukket<br>
+                Søndag: Lukket
+            </p>
+        <div class="some">
+            <a href="https://www.facebook.com/elrecyclingdk"><img class="some_img" src="img/facebook_logo.png" alt="Facebook Logo"></a>
+            <a href="https://www.instagram.com/elrecycling/"><img class="some_img" src="img/instagram_logo.png" alt="Instagram Logo"></a>
+        </div>
+        </div>
+        <div class="column">
+          <h3>5 GODE GRUNDE TIL AT HANDLE HOS OS</h3>
+            <p>- Prismatch på alle varer<br>
+                - Dag til dag Levering<br>
+                - Gratis Fragt<br>
+                - 30 dages fuld returret<br>
+                - 2 års garanti</p>
+            <img class="betaling" src="img/betaling.png" alt="betaling">
+          </div>
+    </footer>
+
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
